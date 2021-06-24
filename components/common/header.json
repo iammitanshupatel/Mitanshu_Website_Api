@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_headers",
+  "info": {
+    "name": "Header",
+    "icon": "heading"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "caption": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

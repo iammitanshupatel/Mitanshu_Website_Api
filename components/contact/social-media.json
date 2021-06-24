@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_contact_social_medias",
+  "info": {
+    "name": "socialMedia",
+    "icon": "comment-medical"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": ["images"],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
