@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/education-and-skills-section",
+      "handler": "education-and-skills-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/education-and-skills-section",
+      "handler": "education-and-skills-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/education-and-skills-section",
+      "handler": "education-and-skills-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
