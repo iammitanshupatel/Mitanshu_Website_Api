@@ -35,7 +35,7 @@
     },
     "endDate": {
       "type": "date",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -59,15 +59,13 @@
       },
       "type": "string"
     },
-    "percentage": {
+    "description": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "integer",
-      "min": 1,
-      "max": 100
+      "type": "string"
     }
   }
 }

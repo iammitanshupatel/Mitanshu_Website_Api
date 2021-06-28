@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/24/2021 10:05:07 PM"
+    "x-generation-date": "06/28/2021 12:23:10 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -667,6 +667,530 @@
           "Banner-section"
         ],
         "parameters": []
+      }
+    },
+    "/banner-spans": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewBanner-span"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/banner-spans/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "parameters": []
+      }
+    },
+    "/banner-spans/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewBanner-span"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Banner-span"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
       }
     },
     "/blog-section": {
@@ -7740,13 +8264,9 @@
         "required": [
           "id",
           "biography",
-          "portfolioImage",
           "downloadCVText",
-          "resume",
-          "firstName",
-          "lastName",
-          "role",
-          "isAvailable"
+          "isAvailable",
+          "adminName"
         ],
         "properties": {
           "id": {
@@ -7754,73 +8274,6 @@
           },
           "biography": {
             "type": "string"
-          },
-          "portfolioImage": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "socialLinks": {
             "type": "array",
@@ -7982,15 +8435,6 @@
               }
             }
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
           "contact": {
             "type": "object",
             "required": [
@@ -8058,28 +8502,46 @@
             "type": "boolean",
             "default": true
           },
+          "header": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "roleOfAdmin": {
+            "type": "string"
+          },
+          "adminName": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "biography",
-                "portfolioImage",
                 "downloadCVText",
-                "resume",
-                "firstName",
-                "lastName",
-                "role",
-                "isAvailable"
+                "isAvailable",
+                "adminName"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "biography": {
-                  "type": "string"
-                },
-                "portfolioImage": {
                   "type": "string"
                 },
                 "socialLinks": {
@@ -8089,15 +8551,6 @@
                   "type": "string"
                 },
                 "resume": {
-                  "type": "string"
-                },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
-                  "type": "string"
-                },
-                "role": {
                   "type": "string"
                 },
                 "contact": {
@@ -8111,6 +8564,15 @@
                 },
                 "isAvailable": {
                   "type": "boolean"
+                },
+                "header": {
+                  "type": "component"
+                },
+                "roleOfAdmin": {
+                  "type": "string"
+                },
+                "adminName": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -8146,10 +8608,8 @@
         "required": [
           "biography",
           "downloadCVText",
-          "firstName",
-          "lastName",
-          "role",
-          "isAvailable"
+          "isAvailable",
+          "adminName"
         ],
         "properties": {
           "biography": {
@@ -8248,15 +8708,6 @@
             "type": "string",
             "default": "Download CV"
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
           "contact": {
             "type": "object",
             "required": [
@@ -8323,6 +8774,31 @@
           "isAvailable": {
             "type": "boolean",
             "default": true
+          },
+          "header": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "roleOfAdmin": {
+            "type": "string"
+          },
+          "adminName": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8429,6 +8905,31 @@
               }
             }
           },
+          "banner_spans": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -8450,6 +8951,12 @@
                 },
                 "backgroundImage": {
                   "type": "string"
+                },
+                "banner_spans": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "localizations": {
                   "type": "array",
@@ -8492,6 +8999,12 @@
           "description": {
             "type": "string"
           },
+          "banner_spans": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -8499,6 +9012,40 @@
             }
           },
           "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Banner-span": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewBanner-span": {
+        "properties": {
+          "name": {
             "type": "string"
           },
           "published_at": {
@@ -9060,7 +9607,6 @@
               "required": [
                 "id",
                 "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -9082,8 +9628,8 @@
                 "institueLink": {
                   "type": "string"
                 },
-                "percentage": {
-                  "type": "integer"
+                "description": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -9179,12 +9725,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
-                "icon": {
-                  "type": "string"
-                },
                 "rating": {
                   "type": "integer"
                 },
@@ -9202,6 +9742,9 @@
                 }
               }
             }
+          },
+          "eduTextForHome": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -9248,6 +9791,9 @@
               "type": "string"
             }
           },
+          "eduTextForHome": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -9264,7 +9810,6 @@
         "required": [
           "id",
           "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
@@ -9288,8 +9833,8 @@
           "institueLink": {
             "type": "string"
           },
-          "percentage": {
-            "type": "integer"
+          "description": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -9297,7 +9842,6 @@
               "required": [
                 "id",
                 "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -9319,8 +9863,8 @@
                 "institueLink": {
                   "type": "string"
                 },
-                "percentage": {
-                  "type": "integer"
+                "description": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -9355,7 +9899,6 @@
       "NewEducation": {
         "required": [
           "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
@@ -9376,8 +9919,8 @@
           "institueLink": {
             "type": "string"
           },
-          "percentage": {
-            "type": "integer"
+          "description": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -9592,8 +10135,7 @@
               "required": [
                 "id",
                 "title",
-                "description",
-                "role"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -9605,28 +10147,19 @@
                 "description": {
                   "type": "string"
                 },
-                "role": {
-                  "type": "string"
-                },
                 "category": {
-                  "type": "component"
-                },
-                "technologyUsed": {
                   "type": "component"
                 },
                 "link": {
                   "type": "string"
                 },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "order": {
                   "type": "integer"
                 },
                 "displayImage": {
+                  "type": "string"
+                },
+                "typeOfPortfolio": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9755,8 +10288,7 @@
         "required": [
           "id",
           "title",
-          "description",
-          "role"
+          "description"
         ],
         "properties": {
           "id": {
@@ -9766,9 +10298,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "role": {
             "type": "string"
           },
           "category": {
@@ -9859,166 +10388,8 @@
               }
             }
           },
-          "technologyUsed": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "title"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "icon": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
           "link": {
             "type": "string"
-          },
-          "media": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "order": {
             "type": "integer"
@@ -10090,14 +10461,16 @@
               }
             }
           },
+          "typeOfPortfolio": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "title",
-                "description",
-                "role"
+                "description"
               ],
               "properties": {
                 "id": {
@@ -10109,28 +10482,19 @@
                 "description": {
                   "type": "string"
                 },
-                "role": {
-                  "type": "string"
-                },
                 "category": {
-                  "type": "component"
-                },
-                "technologyUsed": {
                   "type": "component"
                 },
                 "link": {
                   "type": "string"
                 },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "order": {
                   "type": "integer"
                 },
                 "displayImage": {
+                  "type": "string"
+                },
+                "typeOfPortfolio": {
                   "type": "string"
                 },
                 "localizations": {
@@ -10166,8 +10530,7 @@
       "NewProjects": {
         "required": [
           "title",
-          "description",
-          "role"
+          "description"
         ],
         "properties": {
           "title": {
@@ -10176,98 +10539,7 @@
           "description": {
             "type": "string"
           },
-          "role": {
-            "type": "string"
-          },
           "category": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "title"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "icon": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "technologyUsed": {
             "type": "array",
             "items": {
               "type": "object",
@@ -10360,6 +10632,9 @@
           },
           "order": {
             "type": "integer"
+          },
+          "typeOfPortfolio": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -10690,76 +10965,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "icon": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "rating": {
             "type": "integer",
             "default": 3
@@ -10780,9 +10985,6 @@
         ],
         "properties": {
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "rating": {

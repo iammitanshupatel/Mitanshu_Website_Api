@@ -348,7 +348,6 @@
               "required": [
                 "id",
                 "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -370,8 +369,8 @@
                 "institueLink": {
                   "type": "string"
                 },
-                "percentage": {
-                  "type": "integer"
+                "description": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -467,12 +466,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
-                "icon": {
-                  "type": "string"
-                },
                 "rating": {
                   "type": "integer"
                 },
@@ -490,6 +483,9 @@
                 }
               }
             }
+          },
+          "eduTextForHome": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -535,6 +531,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "eduTextForHome": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

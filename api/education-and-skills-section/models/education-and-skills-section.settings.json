@@ -25,6 +25,9 @@
     },
     "skills": {
       "collection": "skills"
+    },
+    "eduTextForHome": {
+      "type": "text"
     }
   }
 }

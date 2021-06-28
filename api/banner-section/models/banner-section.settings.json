@@ -53,6 +53,9 @@
           "localized": false
         }
       }
+    },
+    "banner_spans": {
+      "collection": "banner-span"
     }
   }
 }

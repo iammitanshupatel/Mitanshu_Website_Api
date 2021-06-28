@@ -319,13 +319,9 @@
         "required": [
           "id",
           "biography",
-          "portfolioImage",
           "downloadCVText",
-          "resume",
-          "firstName",
-          "lastName",
-          "role",
-          "isAvailable"
+          "isAvailable",
+          "adminName"
         ],
         "properties": {
           "id": {
@@ -333,73 +329,6 @@
           },
           "biography": {
             "type": "string"
-          },
-          "portfolioImage": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "socialLinks": {
             "type": "array",
@@ -561,15 +490,6 @@
               }
             }
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
           "contact": {
             "type": "object",
             "required": [
@@ -637,28 +557,46 @@
             "type": "boolean",
             "default": true
           },
+          "header": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "roleOfAdmin": {
+            "type": "string"
+          },
+          "adminName": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "biography",
-                "portfolioImage",
                 "downloadCVText",
-                "resume",
-                "firstName",
-                "lastName",
-                "role",
-                "isAvailable"
+                "isAvailable",
+                "adminName"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
                 "biography": {
-                  "type": "string"
-                },
-                "portfolioImage": {
                   "type": "string"
                 },
                 "socialLinks": {
@@ -668,15 +606,6 @@
                   "type": "string"
                 },
                 "resume": {
-                  "type": "string"
-                },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
-                  "type": "string"
-                },
-                "role": {
                   "type": "string"
                 },
                 "contact": {
@@ -690,6 +619,15 @@
                 },
                 "isAvailable": {
                   "type": "boolean"
+                },
+                "header": {
+                  "type": "component"
+                },
+                "roleOfAdmin": {
+                  "type": "string"
+                },
+                "adminName": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -725,10 +663,8 @@
         "required": [
           "biography",
           "downloadCVText",
-          "firstName",
-          "lastName",
-          "role",
-          "isAvailable"
+          "isAvailable",
+          "adminName"
         ],
         "properties": {
           "biography": {
@@ -827,15 +763,6 @@
             "type": "string",
             "default": "Download CV"
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
           "contact": {
             "type": "object",
             "required": [
@@ -902,6 +829,31 @@
           "isAvailable": {
             "type": "boolean",
             "default": true
+          },
+          "header": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "roleOfAdmin": {
+            "type": "string"
+          },
+          "adminName": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

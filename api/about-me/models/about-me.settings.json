@@ -25,20 +25,6 @@
       "type": "richtext",
       "required": true
     },
-    "portfolioImage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "socialLinks": {
       "type": "component",
       "repeatable": true,
@@ -67,39 +53,12 @@
         "files"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
-    },
-    "firstName": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "lastName": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string",
-      "required": true
-    },
-    "role": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
     },
     "contact": {
       "type": "component",
@@ -138,6 +97,33 @@
       },
       "type": "boolean",
       "default": true,
+      "required": true
+    },
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "common.header"
+    },
+    "roleOfAdmin": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "adminName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
       "required": true
     }
   }

@@ -15,19 +15,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "text"
-    },
-    "icon": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "rating": {
       "type": "integer",
       "min": 1,

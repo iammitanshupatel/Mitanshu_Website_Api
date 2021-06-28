@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/banner-spans",
+      "handler": "banner-span.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/banner-spans/count",
+      "handler": "banner-span.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/banner-spans/:id",
+      "handler": "banner-span.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/banner-spans",
+      "handler": "banner-span.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/banner-spans/:id",
+      "handler": "banner-span.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/banner-spans/:id",
+      "handler": "banner-span.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
