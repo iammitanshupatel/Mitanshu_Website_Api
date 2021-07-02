@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_banner_banner_spans",
+  "info": {
+    "name": "bannerSpan",
+    "icon": "band-aid"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

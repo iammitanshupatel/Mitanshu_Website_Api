@@ -518,7 +518,8 @@
         "required": [
           "id",
           "role",
-          "jobType"
+          "jobType",
+          "startDate"
         ],
         "properties": {
           "id": {
@@ -533,14 +534,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -551,13 +544,20 @@
           "companyLink": {
             "type": "string"
           },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "role",
-                "jobType"
+                "jobType",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -572,12 +572,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -586,6 +580,12 @@
                   ]
                 },
                 "companyLink": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
                   "type": "string"
                 },
                 "localizations": {
@@ -621,7 +621,8 @@
       "NewExperience": {
         "required": [
           "role",
-          "jobType"
+          "jobType",
+          "startDate"
         ],
         "properties": {
           "role": {
@@ -633,14 +634,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -649,6 +642,12 @@
             ]
           },
           "companyLink": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {

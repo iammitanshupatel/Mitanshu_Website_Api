@@ -517,8 +517,8 @@
       "Education": {
         "required": [
           "id",
-          "startDate",
-          "degree"
+          "degree",
+          "startDate"
         ],
         "properties": {
           "id": {
@@ -527,21 +527,19 @@
           "institute": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "degree": {
             "type": "string"
           },
-          "institueLink": {
+          "instituteLink": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {
@@ -549,8 +547,8 @@
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "degree"
+                "degree",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -559,19 +557,19 @@
                 "institute": {
                   "type": "string"
                 },
+                "degree": {
+                  "type": "string"
+                },
+                "instituteLink": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
                 "startDate": {
                   "type": "string"
                 },
                 "endDate": {
-                  "type": "string"
-                },
-                "degree": {
-                  "type": "string"
-                },
-                "institueLink": {
-                  "type": "string"
-                },
-                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -606,28 +604,26 @@
       },
       "NewEducation": {
         "required": [
-          "startDate",
-          "degree"
+          "degree",
+          "startDate"
         ],
         "properties": {
           "institute": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "degree": {
             "type": "string"
           },
-          "institueLink": {
+          "instituteLink": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {

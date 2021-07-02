@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/education-and-skills-section": {
+    "/testimonial-section": {
       "get": {
         "deprecated": false,
-        "description": "Find all the education-and-skills-section's records",
+        "description": "Find all the testimonial-section's records",
         "responses": {
           "200": {
-            "description": "Retrieve education-and-skills-section document(s)",
+            "description": "Retrieve testimonial-section document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Education-and-skills-section"
+          "Testimonial-section"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single education-and-skills-section record",
+        "description": "Update a single testimonial-section record",
         "responses": {
           "200": {
-            "description": "Retrieve education-and-skills-section document(s)",
+            "description": "Retrieve testimonial-section document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Education-and-skills-section"
+          "Testimonial-section"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewEducation-and-skills-section"
+                "$ref": "#/components/schemas/NewTestimonial-section"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single education-and-skills-section record",
+        "description": "Delete a single testimonial-section record",
         "responses": {
           "200": {
-            "description": "deletes a single education-and-skills-section based on the ID supplied",
+            "description": "deletes a single testimonial-section based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Education-and-skills-section"
+          "Testimonial-section"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Education-and-skills-section": {
+      "Testimonial-section": {
         "required": [
           "id"
         ],
@@ -323,53 +323,130 @@
           "id": {
             "type": "string"
           },
-          "Header": {
-            "type": "object",
+          "testimonials": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "profile",
+                "personName",
+                "link"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "profile": {
+                  "type": "string"
+                },
+                "personName": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "jobTitle": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "backgroundImage": {
             "required": [
               "id",
-              "title",
-              "caption"
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
                 "type": "string"
               },
               "caption": {
                 "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
-          "educations": {
+          "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "degree",
-                "startDate"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "institute": {
-                  "type": "string"
+                "testimonials": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "degree": {
-                  "type": "string"
-                },
-                "instituteLink": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
+                "backgroundImage": {
                   "type": "string"
                 },
                 "localizations": {
@@ -393,99 +470,7 @@
               }
             }
           },
-          "experiences": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "role",
-                "jobType",
-                "startDate"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "companyName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "jobType": {
-                  "type": "string",
-                  "enum": [
-                    "fullTime",
-                    "partTime"
-                  ]
-                },
-                "companyLink": {
-                  "type": "string"
-                },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "skills": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "title",
-                "rating"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "rating": {
-                  "type": "integer"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "eduTextForHome": {
+          "locale": {
             "type": "string"
           },
           "published_at": {
@@ -494,46 +479,21 @@
           }
         }
       },
-      "NewEducation-and-skills-section": {
+      "NewTestimonial-section": {
         "properties": {
-          "Header": {
-            "type": "object",
-            "required": [
-              "id",
-              "title",
-              "caption"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "title": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              }
-            }
-          },
-          "educations": {
+          "testimonials": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "experiences": {
+          "localizations": {
             "type": "array",
             "items": {
               "type": "string"
             }
           },
-          "skills": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "eduTextForHome": {
+          "locale": {
             "type": "string"
           },
           "published_at": {

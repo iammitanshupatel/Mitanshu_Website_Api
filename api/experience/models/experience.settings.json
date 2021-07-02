@@ -42,22 +42,6 @@
         }
       }
     },
-    "startDate": {
-      "type": "date",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "endDate": {
-      "type": "date",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "jobType": {
       "type": "enumeration",
       "enum": [
@@ -75,6 +59,23 @@
       "pluginOptions": {
         "i18n": {
           "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "startDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "endDate": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
         }
       },
       "type": "string"

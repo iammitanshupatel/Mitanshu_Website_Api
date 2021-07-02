@@ -56,6 +56,16 @@
     },
     "banner_spans": {
       "collection": "banner-span"
+    },
+    "bannerSpan": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "banner.banner-span"
     }
   }
 }

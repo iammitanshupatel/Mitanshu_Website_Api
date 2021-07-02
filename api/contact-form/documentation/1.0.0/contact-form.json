@@ -531,7 +531,7 @@
         "required": [
           "id",
           "name",
-          "phoneNumber"
+          "email"
         ],
         "properties": {
           "id": {
@@ -540,10 +540,10 @@
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
-          },
           "details": {
+            "type": "string"
+          },
+          "email": {
             "type": "string"
           },
           "published_at": {
@@ -555,16 +555,16 @@
       "NewContact-form": {
         "required": [
           "name",
-          "phoneNumber"
+          "email"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
-          },
           "details": {
+            "type": "string"
+          },
+          "email": {
             "type": "string"
           },
           "published_at": {

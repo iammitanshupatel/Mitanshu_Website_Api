@@ -347,7 +347,6 @@
             "items": {
               "required": [
                 "id",
-                "blogImage",
                 "title",
                 "date"
               ],
@@ -382,6 +381,9 @@
               }
             }
           },
+          "blogPageHeader": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -400,6 +402,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "blogPageHeader": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -457,6 +462,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "blogPageHeader": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

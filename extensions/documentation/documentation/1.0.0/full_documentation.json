@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/28/2021 12:23:10 PM"
+    "x-generation-date": "07/02/2021 2:20:12 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2538,6 +2538,318 @@
             }
           }
         ]
+      }
+    },
+    "/contact-page": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the contact-page's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve contact-page document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Contact-page"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single contact-page record",
+        "responses": {
+          "200": {
+            "description": "Retrieve contact-page document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Contact-page"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewContact-page"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single contact-page record",
+        "responses": {
+          "200": {
+            "description": "deletes a single contact-page based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Contact-page"
+        ],
+        "parameters": []
       }
     },
     "/education-and-skills-section": {
@@ -5518,6 +5830,318 @@
             }
           }
         ]
+      }
+    },
+    "/testimonial-section": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the testimonial-section's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve testimonial-section document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Testimonial-section"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single testimonial-section record",
+        "responses": {
+          "200": {
+            "description": "Retrieve testimonial-section document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Testimonial-section"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewTestimonial-section"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single testimonial-section record",
+        "responses": {
+          "200": {
+            "description": "deletes a single testimonial-section based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Testimonial-section"
+        ],
+        "parameters": []
       }
     },
     "/testimonials": {
@@ -8930,6 +9554,23 @@
               }
             }
           },
+          "bannerSpan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -8957,6 +9598,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "bannerSpan": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -9003,6 +9647,23 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "bannerSpan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
             }
           },
           "localizations": {
@@ -9092,7 +9753,6 @@
             "items": {
               "required": [
                 "id",
-                "blogImage",
                 "title",
                 "date"
               ],
@@ -9127,6 +9787,9 @@
               }
             }
           },
+          "blogPageHeader": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -9145,6 +9808,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "blogPageHeader": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -9203,6 +9869,9 @@
               "type": "string"
             }
           },
+          "blogPageHeader": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -9227,7 +9896,6 @@
       "Blog": {
         "required": [
           "id",
-          "blogImage",
           "title",
           "date"
         ],
@@ -9526,7 +10194,7 @@
         "required": [
           "id",
           "name",
-          "phoneNumber"
+          "email"
         ],
         "properties": {
           "id": {
@@ -9535,10 +10203,10 @@
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
-          },
           "details": {
+            "type": "string"
+          },
+          "email": {
             "type": "string"
           },
           "published_at": {
@@ -9550,16 +10218,306 @@
       "NewContact-form": {
         "required": [
           "name",
-          "phoneNumber"
+          "email"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
-          },
           "details": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Contact-page": {
+        "required": [
+          "id",
+          "header",
+          "bigHeader",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "header": {
+            "type": "string"
+          },
+          "bigHeader": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "socialLink": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "icon": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "header",
+                "bigHeader",
+                "description"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "header": {
+                  "type": "string"
+                },
+                "bigHeader": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "socialLink": {
+                  "type": "component"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewContact-page": {
+        "required": [
+          "header",
+          "bigHeader",
+          "description"
+        ],
+        "properties": {
+          "header": {
+            "type": "string"
+          },
+          "bigHeader": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "socialLink": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "icon": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
             "type": "string"
           },
           "published_at": {
@@ -9606,8 +10564,8 @@
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "degree"
+                "degree",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -9616,19 +10574,19 @@
                 "institute": {
                   "type": "string"
                 },
+                "degree": {
+                  "type": "string"
+                },
+                "instituteLink": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
                 "startDate": {
                   "type": "string"
                 },
                 "endDate": {
-                  "type": "string"
-                },
-                "degree": {
-                  "type": "string"
-                },
-                "institueLink": {
-                  "type": "string"
-                },
-                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9658,7 +10616,8 @@
               "required": [
                 "id",
                 "role",
-                "jobType"
+                "jobType",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -9673,12 +10632,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -9687,6 +10640,12 @@
                   ]
                 },
                 "companyLink": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9809,8 +10768,8 @@
       "Education": {
         "required": [
           "id",
-          "startDate",
-          "degree"
+          "degree",
+          "startDate"
         ],
         "properties": {
           "id": {
@@ -9819,21 +10778,19 @@
           "institute": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "degree": {
             "type": "string"
           },
-          "institueLink": {
+          "instituteLink": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {
@@ -9841,8 +10798,8 @@
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "degree"
+                "degree",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -9851,19 +10808,19 @@
                 "institute": {
                   "type": "string"
                 },
+                "degree": {
+                  "type": "string"
+                },
+                "instituteLink": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
                 "startDate": {
                   "type": "string"
                 },
                 "endDate": {
-                  "type": "string"
-                },
-                "degree": {
-                  "type": "string"
-                },
-                "institueLink": {
-                  "type": "string"
-                },
-                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -9898,28 +10855,26 @@
       },
       "NewEducation": {
         "required": [
-          "startDate",
-          "degree"
+          "degree",
+          "startDate"
         ],
         "properties": {
           "institute": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "degree": {
             "type": "string"
           },
-          "institueLink": {
+          "instituteLink": {
             "type": "string"
           },
           "description": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {
@@ -9947,7 +10902,8 @@
         "required": [
           "id",
           "role",
-          "jobType"
+          "jobType",
+          "startDate"
         ],
         "properties": {
           "id": {
@@ -9962,14 +10918,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -9980,13 +10928,20 @@
           "companyLink": {
             "type": "string"
           },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "role",
-                "jobType"
+                "jobType",
+                "startDate"
               ],
               "properties": {
                 "id": {
@@ -10001,12 +10956,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -10015,6 +10964,12 @@
                   ]
                 },
                 "companyLink": {
+                  "type": "string"
+                },
+                "startDate": {
+                  "type": "string"
+                },
+                "endDate": {
                   "type": "string"
                 },
                 "localizations": {
@@ -10050,7 +11005,8 @@
       "NewExperience": {
         "required": [
           "role",
-          "jobType"
+          "jobType",
+          "startDate"
         ],
         "properties": {
           "role": {
@@ -10062,14 +11018,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -10078,6 +11026,12 @@
             ]
           },
           "companyLink": {
+            "type": "string"
+          },
+          "startDate": {
+            "type": "string"
+          },
+          "endDate": {
             "type": "string"
           },
           "localizations": {
@@ -10144,9 +11098,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "component"
                 },
@@ -10160,6 +11111,9 @@
                   "type": "string"
                 },
                 "typeOfPortfolio": {
+                  "type": "string"
+                },
+                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -10183,6 +11137,9 @@
               }
             }
           },
+          "projectPageHeader": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -10202,6 +11159,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "projectPageHeader": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -10263,6 +11223,9 @@
               "type": "string"
             }
           },
+          "projectPageHeader": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -10295,9 +11258,6 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "category": {
@@ -10464,6 +11424,9 @@
           "typeOfPortfolio": {
             "type": "string"
           },
+          "description": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -10479,9 +11442,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "component"
                 },
@@ -10495,6 +11455,9 @@
                   "type": "string"
                 },
                 "typeOfPortfolio": {
+                  "type": "string"
+                },
+                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -10534,9 +11497,6 @@
         ],
         "properties": {
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "category": {
@@ -10634,6 +11594,9 @@
             "type": "integer"
           },
           "typeOfPortfolio": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "localizations": {
@@ -10992,6 +11955,199 @@
             "default": 3
           },
           "link": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Testimonial-section": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "testimonials": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "profile",
+                "personName",
+                "link"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "profile": {
+                  "type": "string"
+                },
+                "personName": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "jobTitle": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "backgroundImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "testimonials": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "backgroundImage": {
+                  "type": "string"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewTestimonial-section": {
+        "properties": {
+          "testimonials": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
             "type": "string"
           },
           "published_at": {

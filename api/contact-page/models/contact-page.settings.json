@@ -1,8 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "educations",
+  "kind": "singleType",
+  "collectionName": "contactPage",
   "info": {
-    "name": "education",
+    "name": "contactPage",
     "description": ""
   },
   "options": {
@@ -16,30 +16,23 @@
     }
   },
   "attributes": {
-    "institute": {
-      "type": "string",
+    "header": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "degree": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "type": "string",
       "required": true
     },
-    "instituteLink": {
+    "bigHeader": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "pluginOptions": {
@@ -47,24 +40,18 @@
           "localized": true
         }
       },
-      "type": "string"
-    },
-    "startDate": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "type": "string",
       "required": true
     },
-    "endDate": {
+    "socialLink": {
+      "type": "component",
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "string"
+      "component": "contact.social-media"
     }
   }
 }

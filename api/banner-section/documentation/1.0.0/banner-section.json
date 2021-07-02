@@ -424,6 +424,23 @@
               }
             }
           },
+          "bannerSpan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -451,6 +468,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "bannerSpan": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -497,6 +517,23 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "bannerSpan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              }
             }
           },
           "localizations": {

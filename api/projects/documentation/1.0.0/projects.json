@@ -527,9 +527,6 @@
           "title": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
           "category": {
             "type": "array",
             "items": {
@@ -694,6 +691,9 @@
           "typeOfPortfolio": {
             "type": "string"
           },
+          "description": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -709,9 +709,6 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
                 "category": {
                   "type": "component"
                 },
@@ -725,6 +722,9 @@
                   "type": "string"
                 },
                 "typeOfPortfolio": {
+                  "type": "string"
+                },
+                "description": {
                   "type": "string"
                 },
                 "localizations": {
@@ -764,9 +764,6 @@
         ],
         "properties": {
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "category": {
@@ -864,6 +861,9 @@
             "type": "integer"
           },
           "typeOfPortfolio": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           },
           "localizations": {
