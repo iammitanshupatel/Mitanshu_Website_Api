@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "contactPage",
+  "collectionName": "contact-section",
   "info": {
-    "name": "contactPage",
+    "name": "ContactSection",
     "description": ""
   },
   "options": {
@@ -40,10 +40,10 @@
           "localized": true
         }
       },
-      "type": "string",
+      "type": "text",
       "required": true
     },
-    "socialLink": {
+    "socialMedia": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {

@@ -358,7 +358,7 @@
                 "title": {
                   "type": "string"
                 },
-                "category": {
+                "technologyUsed": {
                   "type": "component"
                 },
                 "link": {
@@ -374,6 +374,9 @@
                   "type": "string"
                 },
                 "description": {
+                  "type": "string"
+                },
+                "role": {
                   "type": "string"
                 },
                 "localizations": {

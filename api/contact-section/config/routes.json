@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/contact-page",
-      "handler": "contact-page.find",
+      "path": "/contact-section",
+      "handler": "contact-section.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/contact-page",
-      "handler": "contact-page.update",
+      "path": "/contact-section",
+      "handler": "contact-section.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/contact-page",
-      "handler": "contact-page.delete",
+      "path": "/contact-section",
+      "handler": "contact-section.delete",
       "config": {
         "policies": []
       }

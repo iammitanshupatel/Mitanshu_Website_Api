@@ -415,6 +415,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
@@ -755,6 +758,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }

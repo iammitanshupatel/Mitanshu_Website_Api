@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/contact-page": {
+    "/contact-section": {
       "get": {
         "deprecated": false,
-        "description": "Find all the contact-page's records",
+        "description": "Find all the contact-section's records",
         "responses": {
           "200": {
-            "description": "Retrieve contact-page document(s)",
+            "description": "Retrieve contact-section document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Contact-page"
+          "Contact-section"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single contact-page record",
+        "description": "Update a single contact-section record",
         "responses": {
           "200": {
-            "description": "Retrieve contact-page document(s)",
+            "description": "Retrieve contact-section document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Contact-page"
+          "Contact-section"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewContact-page"
+                "$ref": "#/components/schemas/NewContact-section"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single contact-page record",
+        "description": "Delete a single contact-section record",
         "responses": {
           "200": {
-            "description": "deletes a single contact-page based on the ID supplied",
+            "description": "deletes a single contact-section based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Contact-page"
+          "Contact-section"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Contact-page": {
+      "Contact-section": {
         "required": [
           "id",
           "header",
@@ -335,7 +335,7 @@
           "description": {
             "type": "string"
           },
-          "socialLink": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -420,6 +420,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
@@ -446,7 +449,7 @@
                 "description": {
                   "type": "string"
                 },
-                "socialLink": {
+                "socialMedia": {
                   "type": "component"
                 },
                 "localizations": {
@@ -479,7 +482,7 @@
           }
         }
       },
-      "NewContact-page": {
+      "NewContact-section": {
         "required": [
           "header",
           "bigHeader",
@@ -495,7 +498,7 @@
           "description": {
             "type": "string"
           },
-          "socialLink": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -580,6 +583,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
