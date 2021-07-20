@@ -399,31 +399,6 @@
               }
             }
           },
-          "banner_spans": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "bannerSpan": {
             "type": "array",
             "items": {
@@ -462,12 +437,6 @@
                 },
                 "backgroundImage": {
                   "type": "string"
-                },
-                "banner_spans": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "bannerSpan": {
                   "type": "component"
@@ -512,12 +481,6 @@
           },
           "description": {
             "type": "string"
-          },
-          "banner_spans": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "bannerSpan": {
             "type": "array",

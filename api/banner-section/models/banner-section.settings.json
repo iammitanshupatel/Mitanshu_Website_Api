@@ -54,9 +54,6 @@
         }
       }
     },
-    "banner_spans": {
-      "collection": "banner-span"
-    },
     "bannerSpan": {
       "type": "component",
       "repeatable": true,
