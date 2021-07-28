@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "service_sections",
   "info": {
-    "name": "serviceSection"
+    "name": "serviceSection",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -25,7 +26,7 @@
       },
       "component": "common.header"
     },
-    "services": {
+    "socialMedia": {
       "type": "component",
       "repeatable": true,
       "pluginOptions": {
@@ -33,7 +34,7 @@
           "localized": true
         }
       },
-      "component": "services.services"
+      "component": "contact.social-media"
     }
   }
 }

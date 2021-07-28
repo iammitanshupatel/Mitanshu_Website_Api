@@ -342,24 +342,23 @@
               }
             }
           },
-          "services": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
                 "id",
-                "title",
-                "description",
-                "icon"
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
-                "description": {
+                "url": {
                   "type": "string"
                 },
                 "icon": {
@@ -428,6 +427,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
@@ -445,7 +447,7 @@
                 "header": {
                   "type": "component"
                 },
-                "services": {
+                "socialMedia": {
                   "type": "component"
                 },
                 "localizations": {
@@ -499,24 +501,23 @@
               }
             }
           },
-          "services": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
                 "id",
-                "title",
-                "description",
-                "icon"
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
-                "description": {
+                "url": {
                   "type": "string"
                 },
                 "icon": {
@@ -585,6 +586,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }

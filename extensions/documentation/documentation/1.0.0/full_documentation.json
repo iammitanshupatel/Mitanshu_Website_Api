@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/20/2021 6:34:58 PM"
+    "x-generation-date": "07/28/2021 4:53:29 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -11216,24 +11216,23 @@
               }
             }
           },
-          "services": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
                 "id",
-                "title",
-                "description",
-                "icon"
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
-                "description": {
+                "url": {
                   "type": "string"
                 },
                 "icon": {
@@ -11302,6 +11301,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
@@ -11319,7 +11321,7 @@
                 "header": {
                   "type": "component"
                 },
-                "services": {
+                "socialMedia": {
                   "type": "component"
                 },
                 "localizations": {
@@ -11373,24 +11375,23 @@
               }
             }
           },
-          "services": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
               "required": [
                 "id",
-                "title",
-                "description",
-                "icon"
+                "name",
+                "url"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "title": {
+                "name": {
                   "type": "string"
                 },
-                "description": {
+                "url": {
                   "type": "string"
                 },
                 "icon": {
@@ -11459,6 +11460,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "displayName": {
+                  "type": "string"
                 }
               }
             }
