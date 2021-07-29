@@ -90,6 +90,16 @@
         }
       },
       "type": "string"
+    },
+    "projectImage": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "project.project-image"
     }
   }
 }
