@@ -319,7 +319,6 @@
         "required": [
           "id",
           "biography",
-          "downloadCVText",
           "isAvailable",
           "adminName"
         ],
@@ -421,10 +420,6 @@
                 }
               }
             }
-          },
-          "downloadCVText": {
-            "type": "string",
-            "default": "Download CV"
           },
           "resume": {
             "required": [
@@ -585,13 +580,79 @@
           "adminName": {
             "type": "string"
           },
+          "myImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
                 "biography",
-                "downloadCVText",
                 "isAvailable",
                 "adminName"
               ],
@@ -604,9 +665,6 @@
                 },
                 "socialLinks": {
                   "type": "component"
-                },
-                "downloadCVText": {
-                  "type": "string"
                 },
                 "resume": {
                   "type": "string"
@@ -630,6 +688,9 @@
                   "type": "string"
                 },
                 "adminName": {
+                  "type": "string"
+                },
+                "myImage": {
                   "type": "string"
                 },
                 "localizations": {
@@ -665,7 +726,6 @@
       "NewAbout-me": {
         "required": [
           "biography",
-          "downloadCVText",
           "isAvailable",
           "adminName"
         ],
@@ -764,10 +824,6 @@
                 }
               }
             }
-          },
-          "downloadCVText": {
-            "type": "string",
-            "default": "Download CV"
           },
           "contact": {
             "type": "object",

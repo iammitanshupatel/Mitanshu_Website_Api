@@ -36,16 +36,6 @@
       "component": "contact.social-media",
       "required": false
     },
-    "downloadCVText": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true,
-      "default": "Download CV"
-    },
     "resume": {
       "model": "file",
       "via": "related",
@@ -125,6 +115,20 @@
       },
       "type": "string",
       "required": true
+    },
+    "myImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }
