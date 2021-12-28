@@ -382,6 +382,12 @@
                 "projectImage": {
                   "type": "component"
                 },
+                "playStoreLink": {
+                  "type": "string"
+                },
+                "appStoreLink": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
