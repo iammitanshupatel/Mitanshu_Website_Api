@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "12/28/2021 8:26:05 PM"
+    "x-generation-date": "12/29/2021 9:14:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4231,7 +4231,7 @@
     "/projects/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of projects documents",
+        "description": "Retrieve the numver of projects documents",
         "responses": {
           "200": {
             "description": "Retrieve projects document(s)",
@@ -5054,7 +5054,7 @@
     "/skills/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of skills documents",
+        "description": "Retrieve the numver of skills documents",
         "responses": {
           "200": {
             "description": "Retrieve skills document(s)",
